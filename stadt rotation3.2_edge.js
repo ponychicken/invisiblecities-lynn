@@ -497,63 +497,64 @@
                 content: {
                     dom: [
                         {
-                            type: 'group',
                             id: 'stadtelemente',
+                            type: 'group',
                             rect: ['0', '-82', '1672', '2130', 'auto', 'auto'],
                             c: [
                             {
-                                type: 'rect',
                                 id: 'rand',
                                 symbolName: 'rand',
-                                rect: ['21', '682', '1486', '1235', 'auto', 'auto']
+                                rect: ['21', '682', '1486', '1235', 'auto', 'auto'],
+                                type: 'rect'
                             },
                             {
-                                type: 'rect',
                                 id: 'png_buntestadt',
                                 symbolName: 'png_buntestadt',
-                                rect: ['0', '82', '1536', '2048', 'auto', 'auto']
+                                rect: ['0', '82', '1536', '2048', 'auto', 'auto'],
+                                type: 'rect'
                             },
                             {
-                                type: 'rect',
                                 id: 'rummel',
                                 symbolName: 'rummel',
-                                rect: ['127', '0', '1545', '1707', 'auto', 'auto']
+                                rect: ['127', '0', '1545', '1707', 'auto', 'auto'],
+                                type: 'rect'
                             },
                             {
-                                type: 'image',
                                 id: 'spielsalon23',
+                                type: 'image',
                                 rect: ['504', '1184', '167', '297', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/spielsalon2.png', '0px', '0px']
                             },
                             {
-                                type: 'rect',
                                 id: 'enter',
                                 symbolName: 'enter',
-                                rect: ['591', '1184', '84', '224', 'auto', 'auto']
+                                rect: ['591', '1184', '84', '224', 'auto', 'auto'],
+                                type: 'rect'
                             }]
                         },
                         {
-                            type: 'rect',
-                            id: 'but-raum-rot',
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            cursor: 'pointer',
                             rect: ['438px', '1006', '342', '400', 'auto', 'auto'],
+                            type: 'rect',
                             display: 'block',
+                            id: 'but-raum-rot',
                             opacity: '0',
+                            cursor: 'pointer',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
                             type: 'rect',
-                            symbolName: 'raum_rot',
-                            display: 'none',
                             opacity: '0',
+                            display: 'none',
+                            symbolName: 'raum_rot',
                             rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                             id: 'raum_rot'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1536', '2048']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1536', '2048']
                         }
                     }
                 },
@@ -2051,15 +2052,17 @@
                 content: {
                     dom: [
                         {
-                            rect: [0, 0, '1536px', '2048px', 'auto', 'auto'],
-                            id: 'bunte-stadt_oben',
+                            rect: ['74px', '306px', '1407px', '1232px', 'auto', 'auto'],
+                            id: 'bunte-stadt_oben3',
+                            opacity: '1',
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/bunte-stadt_oben.png', '0px', '0px']
+                            fill: ['rgba(0,0,0,0)', 'images/bunte-stadt_oben3.png', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 1536, 2048]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1536', '2048']
                         }
                     }
                 },

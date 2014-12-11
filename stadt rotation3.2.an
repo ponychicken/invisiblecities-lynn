@@ -632,6 +632,8 @@
 			"timelineColor3":"0x734a5f",
 			"timelineColor":"0xdb619d"}},
 	"expanded:images/riesenrad_leuchten.png":"nil",
+	"expanded:images/bunte-stadt_oben3.png":"nil",
+	"expanded:images/bank.png":"nil",
 	"amusement-Default Timeline_playhead_ms":"0",
 	"reiterOld-Default Timeline_playhead_ms":"0",
 	"symbol_Spiegelei":{
@@ -714,7 +716,7 @@
 			"timelineColor":"0x91c767",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true"}},
-	"StageZoomFactor":"34",
+	"StageZoomFactor":"35",
 	"symbol_Fabrik":{
 		"element_${fabrik}":{
 			"timelineColor2":"0xcbbd71",
@@ -738,7 +740,7 @@
 			"animationEnabled":"true",
 			"usingMotionPaths":"true"}},
 	"haus1-Default Timeline_playhead_ms":"0",
-	"expanded:images/bank.png":"nil",
+	"expanded:images/bunte-stadt_oben2.png":"nil",
 	"symbol_raum_rot3":{
 		"element_${raum_rot3}":{
 			"timelineColor2":"0x168c84",
@@ -1290,7 +1292,7 @@
 			"timelineColor3":"0x385063",
 			"timelineColor":"0x2f73ad"}},
 	"expanded:images/sophronia_schrift.png":"nil",
-	"nextElementColorIndex":"12",
+	"nextElementColorIndex":"13",
 	"stage-Default Timeline_playhead_ms":"21000",
 	"Splash_1-Default Timeline_playhead_ms":"0",
 	"stadt-bunt-Default Timeline_mark_ms":"-1",
@@ -1384,9 +1386,14 @@
 	"symbol_png_buntestadt":{
 		"element_${bunte-stadt_oben}":{
 			"timelineColor2":"0x81aa62",
-			"timelineColor3":"0x5b6c4d",
 			"invisible":"false",
-			"timelineColor":"0x91c767"}},
+			"timelineColor":"0x91c767",
+			"animationEnabled":"false",
+			"timelineColor3":"0x5b6c4d"},
+		"element_${bunte-stadt_oben3}":{
+			"timelineColor2":"0xba5b89",
+			"timelineColor3":"0x734a5f",
+			"timelineColor":"0xdb619d"}},
 	"expanded:images/haus1.png":"nil",
 	"Geist-Default Timeline_playhead_ms":"0",
 	"gesicht_augenzu_1-Default Timeline_mark_ms":"17500",

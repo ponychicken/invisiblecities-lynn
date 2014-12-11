@@ -95,10 +95,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 3250, function(sym, e) {
-         // Stop the timeline at a label or specific time. For example:
-         // sym.stop(500); or sym.stop("myLabel");
+         // Go back to start
          sym.stop("anfang");
-         // Hide an Element.
          sym.$("stadt-grau").hide();
 
       });

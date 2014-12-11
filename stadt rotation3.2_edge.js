@@ -357,32 +357,32 @@
                 content: {
                     dom: [
                         {
-                            transform: [[0, 0, 0], ['0', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
                             id: 'stadt-zwei-seiten',
-                            rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                             type: 'group',
+                            rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                             c: [
                             {
-                                rect: ['0', '0', 1536, 2048, 'auto', 'auto'],
+                                type: 'rect',
                                 display: 'block',
                                 symbolName: 'stadt-bunt',
-                                type: 'rect',
+                                rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                                 id: 'stadt-bunt'
                             },
                             {
-                                transform: [[0, 0, 0], ['180deg', 0, 0], [0, 0], [1, 1, 1], ['50%', '50%']],
                                 type: 'rect',
-                                display: 'none',
-                                id: 'stadt-grau',
+                                transform: [[], ['180']],
                                 opacity: '0',
+                                display: 'none',
                                 symbolName: 'stadt-grau',
-                                rect: ['0', '0', 1536, 2048, 'auto', 'auto']
+                                rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
+                                id: 'stadt-grau'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 1536, 2048]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1536', '2048']
                         }
                     }
                 },

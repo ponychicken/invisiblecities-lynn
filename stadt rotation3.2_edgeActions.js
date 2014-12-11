@@ -18,7 +18,9 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       
 
       Symbol.bindElementAction(compId, symbolName, "${sophronia_titelseite}", "click", function(sym, e) {
-         sym.play("titel_einblenden");
+         
+         sym.play("app_starten");
+         //sym.play("titel_einblenden");
          
 
       });
@@ -70,9 +72,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    (function(symbolName) {   
    
       Symbol.bindElementAction(compId, symbolName, "${stadt-zwei-seiten}", "swiperight", function(sym, e) {
-         // insert code to be run when a swiperight event occurs on an element
-         // Play the timeline at a label or specific time. For example:
-         // sym.play(500); or sym.play("myLabel");
          if (sym.getPosition() <= 0) {
              sym.play("bunt-grau-UZ");
              // alert('bunt-grau');
@@ -83,8 +82,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          	sym.getSymbol("stadt-bunt").getSymbol("rand").play();
          	sym.getSymbol("stadt-bunt").getSymbol("rummel").play();
          }
-         
-         
 
       });
       //Edge binding end
@@ -103,6 +100,22 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          sym.stop("anfang");
          // Hide an Element.
          sym.$("stadt-grau").hide();
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${stadt-zwei-seiten}", "dblclick", function(sym, e) {
+         // insert code for mouse double click here
+         if (sym.getPosition() <= 0) {
+             sym.play("bunt-grau-UZ");
+             // alert('bunt-grau');
+         	sym.getSymbol("stadt-grau").getSymbol("haeuser").play();
+         } else {
+         	sym.play("grau-bunt-UZ");
+         	//alert('grau-bunt');
+         	sym.getSymbol("stadt-bunt").getSymbol("rand").play();
+         	sym.getSymbol("stadt-bunt").getSymbol("rummel").play();
+         }
 
       });
       //Edge binding end

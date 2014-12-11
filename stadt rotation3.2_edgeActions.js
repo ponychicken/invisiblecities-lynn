@@ -659,8 +659,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    //Edge symbol: 'reiter'
    (function(symbolName) {   
    
-   })("reiter");
-   //Edge symbol end:'reiter'
+   })("reiterOld");
+   //Edge symbol end:'reiterOld'
 
    //=========================================================
    

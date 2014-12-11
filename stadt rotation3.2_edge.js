@@ -2740,46 +2740,12 @@
                 resizeInstances: false,
                 content: {
                     dom: [
-                        {
-                            id: 'Splash14',
-                            type: 'image',
-                            rect: [66, 449, 168, 29, 'auto', 'auto'],
-                            fill: ['rgba(0,0,0,0)', 'images/Splash1.png', '0px', '0px']
-                        }
-                    ],
-                    style: {
-                        '${symbolSelector}': {
-                            rect: [null, null, 331, 682]
-                        }
-                    }
-                },
-                timeline: {
-                    duration: 18000,
-                    autoPlay: true,
-                    data: [
 
-                    ]
-                }
-            },
-            "Splash_1": {
-                version: "5.0.1",
-                minimumCompatibleVersion: "5.0.0",
-                build: "5.0.1.386",
-                scaleToFit: "none",
-                centerStage: "none",
-                resizeInstances: false,
-                content: {
-                    dom: [
-                        {
-                            rect: [36, 653, 273, 29, 'auto', 'auto'],
-                            id: 'Splash14',
-                            type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/Splash12.png', '0px', '0px']
-                        }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 331, 682]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '331', '682']
                         }
                     }
                 },
@@ -2787,26 +2753,6 @@
                     duration: 18000,
                     autoPlay: true,
                     data: [
-                        [
-                            "eid351",
-                            "height",
-                            11250,
-                            585,
-                            "easeInQuint",
-                            "${Splash14}",
-                            '29px',
-                            '682px'
-                        ],
-                        [
-                            "eid355",
-                            "height",
-                            12125,
-                            875,
-                            "easeOutQuint",
-                            "${Splash14}",
-                            '681px',
-                            '29px'
-                        ],
                         [
                             "eid352",
                             "top",
@@ -2814,8 +2760,8 @@
                             585,
                             "easeInQuint",
                             "${Splash14}",
-                            '653px',
-                            '0px'
+                            '420px',
+                            '-128px'
                         ],
                         [
                             "eid357",
@@ -2824,8 +2770,28 @@
                             875,
                             "easeOutQuint",
                             "${Splash14}",
-                            '0px',
-                            '653px'
+                            '-128px',
+                            '420px'
+                        ],
+                        [
+                            "eid351",
+                            "height",
+                            11250,
+                            585,
+                            "easeInQuint",
+                            "${Splash14}",
+                            '30px',
+                            '602px'
+                        ],
+                        [
+                            "eid355",
+                            "height",
+                            12125,
+                            875,
+                            "easeOutQuint",
+                            "${Splash14}",
+                            '602px',
+                            '30px'
                         ]
                     ]
                 }
@@ -6055,143 +6021,143 @@
                 content: {
                     dom: [
                         {
-                            rect: [-126, 80, 1536, 2048, 'auto', 'auto'],
-                            fi: ['0', '0deg', '1', '1', '0', '0', '0', '0px', 'rgba(0,0,0,0)', '0px', '0px', '0px'],
+                            type: 'rect',
+                            filter: [0, 0, 1, 1, 0, 0, 0, 0, 'rgba(0,0,0,0)', 0, 0, 0],
                             id: 'png_buntestadtCopy2',
                             symbolName: 'png_buntestadt',
-                            filter: ['0', '0deg', '1', '1', '0', '0', '0', '0px', 'rgba(0,0,0,0)', '0px', '0px', '0px'],
-                            type: 'rect'
+                            rect: ['-126', '80', '1536', '2048', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'riesenrad',
                             symbolName: 'riesenrad',
                             opacity: '1',
-                            rect: [687, 190, 658, 681, 'auto', 'auto']
+                            rect: ['687', '190', '658', '681', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'riesenrad_leuchten',
                             symbolName: 'riesenrad_leuchten',
                             opacity: '1',
-                            rect: [498, 0, 1031, 1059, 'auto', 'auto']
+                            rect: ['498', '0', '1031', '1059', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'Geist',
                             symbolName: 'Geist',
                             opacity: '1',
-                            rect: [0, 845, 352, 374, 'auto', 'auto']
+                            rect: ['0', '845', '352', '374', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'auto2',
                             symbolName: 'auto',
                             opacity: '1',
-                            rect: [69, 1422, 100, 118, 'auto', 'auto']
+                            rect: ['69', '1422', '100', '118', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'Korb',
                             symbolName: 'Korb',
                             opacity: '1',
-                            rect: [190, 738, 71, 72, 'auto', 'auto']
+                            rect: ['190', '738', '71', '72', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'Spiegelei',
                             symbolName: 'Spiegelei',
                             opacity: '1',
-                            rect: [893, 873, 139, 54, 'auto', 'auto']
+                            rect: ['893', '873', '139', '54', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'Ball',
                             symbolName: 'Ball',
                             opacity: '1',
-                            rect: [848, 1217, 24, 26, 'auto', 'auto']
+                            rect: ['848', '1217', '24', '26', 'auto', 'auto']
                         },
                         {
-                            transform: [[0, 0, 0], [0, 0, 0], [0, 0], ['0.64218', '0.64218', 1], ['50%', '50%']],
-                            symbolName: 'Splash_1',
-                            id: 'Splash',
-                            opacity: '1',
                             type: 'rect',
-                            rect: [400, 992, 331, 682, 'auto', 'auto']
+                            transform: [[], [], [], ['0.64218', '0.64218']],
+                            id: 'Splash',
+                            symbolName: 'Splash',
+                            opacity: '1',
+                            rect: ['439px', '1134px', '331', '682', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'diamant',
                             symbolName: 'diamant',
                             opacity: '1',
-                            rect: [616, 436, 68, 109, 'auto', 'auto']
+                            rect: ['616', '436', '68', '109', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'diamant_leuchten',
                             symbolName: 'diamant_leuchten',
                             opacity: '1',
-                            rect: [249, 465, 222, 300, 'auto', 'auto']
+                            rect: ['249', '465', '222', '300', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'fun_leuchten2',
                             symbolName: 'fun_leuchten',
                             opacity: '1',
-                            rect: [710, 961, 100, 123, 'auto', 'auto']
+                            rect: ['710', '961', '100', '123', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'rauch',
                             symbolName: 'rauch',
                             opacity: '1',
-                            rect: [54, 320, 181, 285, 'auto', 'auto']
+                            rect: ['54', '320', '181', '285', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'streifen',
                             symbolName: 'streifen',
                             opacity: '1',
-                            rect: [185, 932, 80, 142, 'auto', 'auto']
+                            rect: ['185', '932', '80', '142', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'happytime',
                             symbolName: 'happytime',
                             opacity: '1',
-                            rect: [155, 1055, 142, 160, 'auto', 'auto']
+                            rect: ['155', '1055', '142', '160', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'action',
                             symbolName: 'action1',
                             opacity: '1',
-                            rect: [1125, 575, 200, 332, 'auto', 'auto']
+                            rect: ['1125', '575', '200', '332', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'verlauf',
                             symbolName: 'verlauf',
                             opacity: '1',
-                            rect: [1045, 597, 500, 343, 'auto', 'auto']
+                            rect: ['1045', '597', '500', '343', 'auto', 'auto']
                         },
                         {
                             type: 'rect',
                             id: 'peng',
                             symbolName: 'peng',
                             opacity: '1',
-                            rect: [144, 1328, 428, 379, 'auto', 'auto']
+                            rect: ['144', '1328', '428', '379', 'auto', 'auto']
                         },
                         {
-                            rect: ['0', 82, 0, 0, 'auto', 'auto'],
                             id: 'amusementCopy',
                             symbolName: 'amusement',
+                            rect: ['0', '82', '0', '0', 'auto', 'auto'],
                             type: 'rect'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 1545, 1707]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1545', '1707']
                         }
                     }
                 },

@@ -625,22 +625,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
    //=========================================================
    
-   //Edge symbol: 'Splash'
-   (function(symbolName) {   
-   
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 18000, function(sym, e) {
-         sym.play(0);
-
-      });
-      //Edge binding end
-
-   })("Splash_1");
-   //Edge symbol end:'Splash_1'
-
-   //=========================================================
-
-   //=========================================================
-   
    //Edge symbol: 'Geist'
    (function(symbolName) {   
    

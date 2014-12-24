@@ -4,6 +4,16 @@
 	"action-Default Timeline_playhead_ms":"0",
 	"expanded:images/haus2.png":"nil",
 	"symbol_stadtrotation":{
+		"element_${amusement2}":{
+			"timelineColor2":"0xd8b467",
+			"timelineColor3":"0x81714f",
+			"animationEnabled":"false",
+			"timelineColor":"0xffd46d"},
+		"element_${Amusement}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
 		"element_${stadt-zwei-seiten}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
@@ -75,11 +85,15 @@
 			"timelineColor3":"0x295a6d",
 			"timelineColor":"0x008dc8"}},
 	"symbol_amusement":{
+		"defaultStageParentHeight":"2048px",
+		"dummyStageParentHeight":"2048px",
+		"defaultStageParentWidth":"1536px",
 		"element_${Amusement}":{
 			"timelineColor2":"0xba5b89",
 			"timelineColor3":"0x734a5f",
 			"animationEnabled":"true",
-			"timelineColor":"0xdb619d"}},
+			"timelineColor":"0xdb619d"},
+		"dummyStageParentWidth":"1536px"},
 	"symbol_fenster":{
 		"element_${fenster}":{
 			"timelineColor2":"0xb099ce",
@@ -447,7 +461,7 @@
 			"timelineColor3":"0x2a605c",
 			"animationEnabled":"true",
 			"timelineColor":"0x00a096"}},
-	"pref__general__AutoKeyframePropertiesArmed":"false",
+	"pref__general__AutoKeyframePropertiesArmed":"true",
 	"expanded:images/zaun.png":"nil",
 	"symbol_marmordunkel":{
 		"element_${marmordunkel}":{
@@ -481,6 +495,7 @@
 	"Spiegelei-Default Timeline_playhead_ms":"0",
 	"raum_grau-Default Timeline_playhead_ms":"0",
 	"expanded:images/riesenrad_leuchten.png":"nil",
+	"happytime-Default Timeline_playhead_ms":"0",
 	"expanded:images/spielsalon2.png":"nil",
 	"haeuser-Default Timeline_playhead_ms":"0",
 	"expanded:images/loader-bar.gif":"nil",
@@ -499,7 +514,7 @@
 			"timelineColor":"0x2f73ad"}},
 	"expanded:images/schwarzeshaus.png":"nil",
 	"expanded:images/Ball2.png":"nil",
-	"TransitionIdCounter":"2078",
+	"TransitionIdCounter":"2080",
 	"sym_autofun-Default Timeline_playhead_ms":"0",
 	"text_sophronia-Default Timeline_playhead_ms":"0",
 	"symbol_sym_autofun":{},
@@ -554,8 +569,8 @@
 			"timelineColor":"0x91c767",
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true"}},
-	"StageZoomFactor":"35",
-	"pixelsPerMs":"0.010014456780288",
+	"StageZoomFactor":"10",
+	"pixelsPerMs":"0.19873058948003",
 	"symbol_Klotzr":{
 		"defaultStageParentHeight":"122px",
 		"element_${Klotz2}":{
@@ -1300,7 +1315,7 @@
 			"timelineColor3":"0x385063",
 			"timelineColor":"0x2f73ad"}},
 	"expanded:images/Korb.png":"nil",
-	"nextElementColorIndex":"13",
+	"nextElementColorIndex":"2",
 	"stage-Default Timeline_playhead_ms":"21000",
 	"Splash_1-Default Timeline_playhead_ms":"0",
 	"stadt-bunt-Default Timeline_mark_ms":"-1",
@@ -1418,7 +1433,7 @@
 			"invisible":"false",
 			"timelineColor":"0x63599f"}},
 	"fenster-Default Timeline_playhead_ms":"0",
-	"viewStartY":"0",
+	"viewStartY":"156",
 	"symbol_kopf_grau":{},
 	"expanded:images/streifen.png":"nil",
 	"symbol_gesicht":{
@@ -1657,7 +1672,7 @@
 			"animationEnabled":"false",
 			"timelineColor":"0x2f73ad"},
 		"element_${stadtelemente}":{
-			"epOpened":"true",
+			"epOpened":"false",
 			"invisible":"false",
 			"timelineColor":"0x00a096",
 			"timelineTreeOpened":"true",
@@ -1769,7 +1784,8 @@
 			"timelineColor3":"0x81714f",
 			"timelineColor":"0xffd46d",
 			"timelineTreeOpened":"false",
-			"animationEnabled":"true"},
+			"animationEnabled":"false",
+			"scrubbingEnabled":"true"},
 		"element_${pfeil}":{
 			"timelineColor2":"0x5a558a",
 			"invisible":"false",
@@ -1907,7 +1923,7 @@
 	"fun_leuchten-Default Timeline_mark_ms":"-1",
 	"expanded:images/reiterstandbild.png":"nil",
 	"reiterOld-Default Timeline_playhead_ms":"0",
-	"happytime-Default Timeline_playhead_ms":"0",
+	"viewStartMs":"-25.159689561224",
 	"bank-Default Timeline_playhead_ms":"0",
 	"expanded:images/untertitel.png":"nil",
 	"fun_leuchten-Default Timeline_playhead_ms":"0",

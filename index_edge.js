@@ -357,31 +357,42 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                             id: 'stadt-zwei-seiten',
                             type: 'group',
+                            rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                             c: [
                             {
                                 type: 'rect',
-                                id: 'stadt-bunt',
-                                symbolName: 'stadt-bunt',
                                 display: 'block',
-                                rect: ['0', '0', '1536', '2048', 'auto', 'auto']
+                                symbolName: 'stadt-bunt',
+                                rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
+                                id: 'stadt-bunt'
+                            },
+                            {
+                                preload: 'auto',
+                                type: 'audio',
+                                source: ['media/Amusemen-J_Fairba-8432_hifi.mp3'],
+                                loop: 'loop',
+                                id: 'Amusement',
+                                rect: ['816', '1325', '320px', '45px', 'auto', 'auto'],
+                                display: 'none',
+                                tag: 'audio'
                             },
                             {
                                 type: 'rect',
-                                transform: [[], ['180'], [0, 0, 0], [1, 1, 1]],
-                                id: 'stadt-grau',
+                                transform: [[], ['180']],
+                                opacity: '0',
                                 display: 'none',
                                 symbolName: 'stadt-grau',
-                                opacity: '0',
-                                rect: ['0', '0', '1536', '2048', 'auto', 'auto']
+                                rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
+                                id: 'stadt-grau'
                             }]
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1536', '2048']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1536', '2048']
                         }
                     }
                 },
@@ -394,6 +405,76 @@
                         "grau-bunt-UZ": 2000
                     },
                     data: [
+                        [
+                            "eid7",
+                            "opacity",
+                            250,
+                            1250,
+                            "linear",
+                            "${stadt-grau}",
+                            '0',
+                            '1'
+                        ],
+                        [
+                            "eid11",
+                            "opacity",
+                            2000,
+                            1250,
+                            "linear",
+                            "${stadt-grau}",
+                            '1',
+                            '0'
+                        ],
+                        [
+                            "eid2079",
+                            "display",
+                            3250,
+                            0,
+                            "easeInOutQuad",
+                            "${Amusement}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid245",
+                            "display",
+                            1500,
+                            0,
+                            "linear",
+                            "${stadt-bunt}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid248",
+                            "display",
+                            2000,
+                            0,
+                            "linear",
+                            "${stadt-bunt}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid5",
+                            "rotateZ",
+                            250,
+                            1250,
+                            "easeInOutQuad",
+                            "${stadt-zwei-seiten}",
+                            '0deg',
+                            '180deg'
+                        ],
+                        [
+                            "eid9",
+                            "rotateZ",
+                            2000,
+                            1250,
+                            "easeInOutQuad",
+                            "${stadt-zwei-seiten}",
+                            '180deg',
+                            '360deg'
+                        ],
                         [
                             "eid247",
                             "display",
@@ -423,66 +504,6 @@
                             "${stadt-grau}",
                             'block',
                             'none'
-                        ],
-                        [
-                            "eid7",
-                            "opacity",
-                            250,
-                            1250,
-                            "linear",
-                            "${stadt-grau}",
-                            '0',
-                            '1'
-                        ],
-                        [
-                            "eid11",
-                            "opacity",
-                            2000,
-                            1250,
-                            "linear",
-                            "${stadt-grau}",
-                            '1',
-                            '0'
-                        ],
-                        [
-                            "eid5",
-                            "rotateZ",
-                            250,
-                            1250,
-                            "easeInOutQuad",
-                            "${stadt-zwei-seiten}",
-                            '0deg',
-                            '180deg'
-                        ],
-                        [
-                            "eid9",
-                            "rotateZ",
-                            2000,
-                            1250,
-                            "easeInOutQuad",
-                            "${stadt-zwei-seiten}",
-                            '180deg',
-                            '360deg'
-                        ],
-                        [
-                            "eid245",
-                            "display",
-                            1500,
-                            0,
-                            "linear",
-                            "${stadt-bunt}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid248",
-                            "display",
-                            2000,
-                            0,
-                            "linear",
-                            "${stadt-bunt}",
-                            'none',
-                            'block'
                         ]
                     ]
                 }
@@ -497,63 +518,64 @@
                 content: {
                     dom: [
                         {
-                            type: 'group',
                             id: 'stadtelemente',
+                            type: 'group',
                             rect: ['0', '-82', '1672', '2130', 'auto', 'auto'],
                             c: [
                             {
-                                type: 'rect',
                                 id: 'rand',
                                 symbolName: 'rand',
-                                rect: ['21', '682', '1486', '1235', 'auto', 'auto']
+                                rect: ['21', '682', '1486', '1235', 'auto', 'auto'],
+                                type: 'rect'
                             },
                             {
-                                type: 'rect',
                                 id: 'png_buntestadt',
                                 symbolName: 'png_buntestadt',
-                                rect: ['0', '82', '1536', '2048', 'auto', 'auto']
+                                rect: ['0', '82', '1536', '2048', 'auto', 'auto'],
+                                type: 'rect'
                             },
                             {
-                                type: 'rect',
                                 id: 'rummel',
                                 symbolName: 'rummel',
-                                rect: ['127', '0', '1545', '1707', 'auto', 'auto']
+                                rect: ['127', '0', '1545', '1707', 'auto', 'auto'],
+                                type: 'rect'
                             },
                             {
-                                type: 'image',
                                 id: 'spielsalon23',
+                                type: 'image',
                                 rect: ['504', '1184', '167', '297', 'auto', 'auto'],
                                 fill: ['rgba(0,0,0,0)', 'images/spielsalon2.png', '0px', '0px']
                             },
                             {
-                                type: 'rect',
                                 id: 'enter',
                                 symbolName: 'enter',
-                                rect: ['591', '1184', '84', '224', 'auto', 'auto']
+                                rect: ['591', '1184', '84', '224', 'auto', 'auto'],
+                                type: 'rect'
                             }]
                         },
                         {
-                            type: 'rect',
-                            id: 'but-raum-rot',
                             stroke: [0, 'rgba(0,0,0,1)', 'none'],
-                            cursor: 'pointer',
                             rect: ['438px', '1006', '342', '400', 'auto', 'auto'],
+                            type: 'rect',
                             display: 'block',
+                            id: 'but-raum-rot',
                             opacity: '0',
+                            cursor: 'pointer',
                             fill: ['rgba(192,192,192,1)']
                         },
                         {
                             type: 'rect',
-                            symbolName: 'raum_rot',
-                            display: 'none',
                             opacity: '0',
+                            display: 'none',
+                            symbolName: 'raum_rot',
                             rect: ['0', '0', '1536', '2048', 'auto', 'auto'],
                             id: 'raum_rot'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, '1536', '2048']
+                            isStage: 'true',
+                            rect: [undefined, undefined, '1536', '2048']
                         }
                     }
                 },
@@ -3199,18 +3221,20 @@
                 content: {
                     dom: [
                         {
-                            loop: 'loop',
+                            preload: 'auto',
+                            type: 'audio',
                             source: ['media/Amusemen-J_Fairba-8432_hifi.mp3'],
                             volume: '0.200000',
                             id: 'Amusement',
-                            rect: [332, 747, '320px', '45px', 'auto', 'auto'],
-                            type: 'audio',
+                            loop: 'loop',
+                            rect: ['332', '747', '320px', '45px', 'auto', 'auto'],
                             tag: 'audio'
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
-                            rect: [null, null, 0, 0]
+                            isStage: 'true',
+                            rect: [undefined, undefined, '0', '0']
                         }
                     }
                 },

@@ -1,5 +1,5 @@
 Invisible city by Lynn Seemann
 
 TODO
-* Remove doubleclick to swipe
+* Sound not working
 * Remove skip intro

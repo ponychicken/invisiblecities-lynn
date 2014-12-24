@@ -73,12 +73,10 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
       Symbol.bindElementAction(compId, symbolName, "${stadt-zwei-seiten}", "swiperight", function(sym, e) {
          if (sym.getPosition() <= 0) {
-             sym.play("bunt-grau-UZ");
-             // alert('bunt-grau');
+            sym.play("bunt-grau-UZ");
          	sym.getSymbol("stadt-grau").getSymbol("haeuser").play();
          } else {
          	sym.play("grau-bunt-UZ");
-         	//alert('grau-bunt');
          	sym.getSymbol("stadt-bunt").getSymbol("rand").play();
          	sym.getSymbol("stadt-bunt").getSymbol("rummel").play();
          }
@@ -98,22 +96,16 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          // Go back to start
          sym.stop("anfang");
          sym.$("stadt-grau").hide();
+         sym.$("Amusement2").play();
+         // Set the volume of an audio track to 20% 
+         sym.getComposition().getStage().getSymbol("stadtrotation").getSymbol("stadt-bunt").getSymbol("rummel").getSymbol("amusementCopy").$("Amusement")[0].volume = 0.8;
+         
 
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${stadt-zwei-seiten}", "dblclick", function(sym, e) {
-         // insert code for mouse double click here
-         if (sym.getPosition() <= 0) {
-             sym.play("bunt-grau-UZ");
-             // alert('bunt-grau');
-         	sym.getSymbol("stadt-grau").getSymbol("haeuser").play();
-         } else {
-         	sym.play("grau-bunt-UZ");
-         	//alert('grau-bunt');
-         	sym.getSymbol("stadt-bunt").getSymbol("rand").play();
-         	sym.getSymbol("stadt-bunt").getSymbol("rummel").play();
-         }
+         
 
       });
       //Edge binding end

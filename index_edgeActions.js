@@ -19,8 +19,8 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${sophronia_titelseite}", "click", function(sym, e) {
          
-         sym.play("app_starten");
-         //sym.play("titel_einblenden");
+         //sym.play("app_starten");
+         sym.play("titel_einblenden");
          
 
       });

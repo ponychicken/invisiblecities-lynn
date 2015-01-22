@@ -80,7 +80,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
          	sym.getSymbol("stadt-bunt").getSymbol("rand").play();
          	sym.getSymbol("stadt-bunt").getSymbol("rummel").play();
          }
-
       });
       //Edge binding end
 
@@ -104,9 +103,15 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${stadt-zwei-seiten}", "dblclick", function(sym, e) {
-         
-
+      Symbol.bindElementAction(compId, symbolName, "${stadt-zwei-seiten}", "swipeleft", function(sym, e) {
+         if (sym.getPosition() <= 0) {
+            sym.play("bunt-grau-UZ");
+            sym.getSymbol("stadt-grau").getSymbol("haeuser").play();
+         } else {
+            sym.play("grau-bunt-UZ");
+            sym.getSymbol("stadt-bunt").getSymbol("rand").play();
+            sym.getSymbol("stadt-bunt").getSymbol("rummel").play();
+         }
       });
       //Edge binding end
 
@@ -164,8 +169,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
    
       Symbol.bindElementAction(compId, symbolName, "${but-raum-grau}", "click", function(sym, e) {
          sym.play("raum_grau");
-         
-
       });
       //Edge binding end
 
@@ -173,7 +176,6 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 6250, function(sym, e) {
          sym.stop();
-
       });
       //Edge binding end
 
@@ -185,13 +187,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${but-reiterstandbild}", "click", function(sym, e) {
          sym.play("reiterstandbild_zoom");
-
       });
       //Edge binding end
 
       Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 19250, function(sym, e) {
          sym.stop("start");
-
       });
       //Edge binding end
 
@@ -1289,14 +1289,16 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
 
       Symbol.bindElementAction(compId, symbolName, "${amusementCopy}", "click", function(sym, e) {
          sym.play();
-         
-
       });
       //Edge binding end
 
       Symbol.bindElementAction(compId, symbolName, "${amusementCopy}", "swiperight", function(sym, e) {
          sym.play();
+      });
+      //Edge binding end
 
+      Symbol.bindElementAction(compId, symbolName, "${amusementCopy}", "swipeleft", function(sym, e) {
+         sym.play();
       });
       //Edge binding end
 
